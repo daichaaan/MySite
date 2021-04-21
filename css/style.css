@@ -143,13 +143,29 @@ header h1 a {
 
 /* ---header----------------------------------------------------------------------- */
 /* ---nav_bar--- */
-
-.top_img {
+.top_img_container {
   height: 485px;
   max-height: 485px;
   width: 100%;
   margin: 0 auto;
-  background-color: wheat;
+}
+.top_img {
+  display: block;
+  height: 100%;
+  background-color: #eeeeee;
+  background-image: url(/Applications/MAMP/htdocs/MySite/img/banner_20191122_02.jpg);
+  background-repeat: space;
+  background-position: center;
+}
+.top_img img {
+  width: 1024px;
+  height: 100%;
+
+  display: block;
+  /*
+  background-image: url(/Applications/MAMP/htdocs/MySite/img/gallery6.jpg);
+  background-repeat: repeat;
+  background-size: cover; */
 }
 
 .nav_bar {
@@ -348,28 +364,9 @@ main {
   padding-left: 10px;
 }
 /* top_contents-------------------------------------------- */
-/* report------ */
-.report {
-  background-color: turquoise;
-}
-
-.link_bar {
-  margin: 0 auto;
-  background-color: slateblue;
-}
-
-.gallery {
-  margin: 0 auto;
-}
-
-.gallery_top {
-  background-color: #202d5d;
-}
-
-.gallery_img {
-}
 /* report--------------- */
 .report {
+  background-color: white;
   margin-bottom: 1rem;
 }
 .report_container {
@@ -389,8 +386,8 @@ main {
   width: 100%;
   height: 6rem;
 }
-.report_text{
-  
+.report_text {
+  line-height: 1.5rem;
 }
 .report_text h3 {
   display: inline-block;
@@ -403,7 +400,6 @@ main {
   line-height: 1.5;
   font-size: x-small;
 }
-
 /* report----------------------------------------------------- */
 /* right link------------------------------------------------- */
 .container_right {
@@ -454,13 +450,39 @@ main {
   width: 100%;
 }
 /* sponcer -----------------------------------------------*/
-/* ranking --------- */
+/* ranking  */
 .league_ranking {
   background-color: lightskyblue;
   margin-top: 10px;
 }
 /* ranking------------------------------------------------ */
-/* footer-------------------------------------------------- -- */
+/* link_bar */
+.link_bar_wrap {
+  margin: 0 auto 1rem;
+}
+.link_bar_wrap ul {
+  display: flex;
+}
+.link_bar_wrap ul li {
+  margin-right: 10px;
+}
+.link_bar img {
+  width: 100%;
+}
+/* link_bar----------------------------------------------- */
+/* gallery */
+.gallery {
+  margin: 0 auto;
+}
+.gallery_container {
+  width: 100%;
+  height: 200px;
+  background-color: teal;
+}
+.gallery_img {
+}
+/* gallery------------------------------------------------- */
+/* footer */
 footer {
   padding: 0 20px;
   background-color: #ff6600;
