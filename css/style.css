@@ -369,14 +369,22 @@ main {
 .gallery_img {
 }
 /* report--------------- */
+.report {
+}
+.report_container{
+  width: 100%;
+}
+.report_list {
+}
+
+/* report----------------------------------------------------- */
 /* right link------------------------------------------------- */
 .container_right {
-  padding-top: 16px;
+  padding-top: 1rem;
   position: absolute;
   top: 0;
   right: 0;
   width: 30%;
-  /* background-color: sandybrown; */
 }
 .banner_link {
   display: block;
@@ -391,19 +399,32 @@ main {
   height: auto;
 }
 
-.bannner.one {
+.bannner.one img {
   width: 100%;
-height: auto;
 }
-.bannner.two {
-  height: 80px;
-  height: auto;
+.bannner.two img {
+  width: 100%;
   margin-top: 5px;
 }
 /*  */
 /* sponcer -----------*/
 .sponcer {
-  background-color: darkkhaki;
+  background-color: #dddddd;
+}
+.sponcer_container {
+  padding: 5px 0 5px;
+}
+.sponcer_container ul {
+  text-align: center;
+}
+.sponcer_bar {
+  display: inline-block;
+  width: 60%;
+  margin-top: 3px;
+  align-items: center;
+}
+.sponcer_bar img {
+  width: 100%;
 }
 /* sponcer -----------------------------------------------*/
 /* ranking --------- */
