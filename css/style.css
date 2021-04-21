@@ -370,11 +370,38 @@ main {
 }
 /* report--------------- */
 .report {
+  margin-bottom: 1rem;
 }
-.report_container{
+.report_container {
   width: 100%;
 }
+.report_container ul {
+  padding: 1rem 0.5rem 1.5rem;
+  display: flex;
+  justify-content: space-around;
+}
 .report_list {
+  display: inline-block;
+  width: 23%;
+  color: #1f2c5c;
+}
+.report_list img {
+  width: 100%;
+  height: 6rem;
+}
+.report_text{
+  
+}
+.report_text h3 {
+  display: inline-block;
+  width: 100%;
+  height: 1.5rem;
+  font-size: small;
+  margin: 0.5rem 0;
+}
+.report_text p {
+  line-height: 1.5;
+  font-size: x-small;
 }
 
 /* report----------------------------------------------------- */
