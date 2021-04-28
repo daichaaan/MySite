@@ -81,16 +81,27 @@ header {
   top: 0;
   white-space: nowrap;
 }
-.header_h1 {
+.header_name {
   position: absolute;
   margin-left: 170px;
-}
+  color: #202d5d;
+  width: 20rem;
+  padding-left: 2rem;
 
-header h1 a {
+}
+header h2 {
   color: #202d5d;
   display: inline-block;
   font-weight: bold;
   line-height: initial;
+}
+header h1 {
+  color: #202d5d;
+  display: inline-block;
+  font-weight: bold;
+  line-height: initial;
+  font-size: x-large;
+  padding-left: 1rem;
 }
 
 .header_content {
@@ -485,8 +496,7 @@ main {
   color: #202d5d;
 }
 .league_ranking ul li:hover {
-  background-color: #EEEEEE;
-
+  background-color: #eeeeee;
 }
 .ranking_table table {
   width: 100%;
