@@ -87,7 +87,6 @@ header {
   color: #202d5d;
   width: 20rem;
   padding-left: 2rem;
-
 }
 header h2 {
   color: #202d5d;
@@ -229,6 +228,49 @@ header h1 {
 main {
   background-color: #eeeeee;
 }
+/* member */
+.main_box {
+  height: 500px;
+}
+.member_box {
+  width: 1024px;
+  background-color: white;
+  height: 450px;
+  margin: 0 auto;
+  padding-top: 2rem;
+  flex-wrap: wrap;
+}
+.member {
+  background-color: thistle;
+  padding: 1rem;
+  width: 25%;
+}
+
+.member_photo {
+  width: 80%;
+  background-color: wheat;
+  text-align: center;
+  margin: 0 auto;
+  /* height: 200px; */
+}
+.photo{
+  background-color: teal;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  display: inline-block;
+}
+.member_photo::before {
+  padding-top: 100%;
+  display: block;
+  content: "";
+}
+.member_name{
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 1rem;
+}
+
 .container {
   max-width: 1024px;
   padding: 1rem 0;
