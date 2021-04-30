@@ -230,20 +230,48 @@ main {
 }
 /* member */
 .main_box {
-  height: 500px;
+  height: 1500px;
 }
 .member_box {
   width: 1024px;
   background-color: white;
   height: 450px;
   margin: 0 auto;
-  padding-top: 2rem;
+}
+.member_title{
+  display: flex;
+  border-bottom: solid 2px #FB6700;
+  padding: 25px 0px 25px 10px;
+}
+.member_title h2{
+  font-size: xx-large;
+}
+
+.member_man {
+  font-size: 20px;
+  padding: 2rem;
+}
+.mens {
+  width: 100%;
+  display: flex;
+  justify-content: left;
   flex-wrap: wrap;
 }
 .member {
   background-color: thistle;
   padding: 1rem;
   width: 25%;
+  margin: 0;
+}
+.member_woman {
+  font-size: 20px;
+  padding: 2rem;
+}
+.woman {
+  width: 100%;
+  display: flex;
+  justify-content: left;
+  flex-wrap: wrap;
 }
 
 .member_photo {
@@ -253,7 +281,7 @@ main {
   margin: 0 auto;
   /* height: 200px; */
 }
-.photo{
+.photo {
   background-color: teal;
   width: 100%;
   height: 100%;
@@ -265,10 +293,13 @@ main {
   display: block;
   content: "";
 }
-.member_name{
+.member_name {
   margin: 0 auto;
   text-align: center;
   padding-top: 1rem;
+}
+.member_name p {
+  padding-bottom: 0.5rem;
 }
 
 .container {
