@@ -44,17 +44,14 @@ a {
   padding-left: 10px;
 }
 /* title css------------------- */
-
 body {
   display: block;
   margin: 0 auto;
 }
-
 header {
   width: 100%;
   height: 6rem;
 }
-
 .header_nav {
   position: relative;
   max-width: 1024px;
@@ -64,12 +61,10 @@ header {
   justify-content: space-between;
   align-items: center;
 }
-
 .header_logo {
   height: 52px;
   width: 160px;
 }
-
 .header_logo a {
   display: inline-block;
   height: 100%;
@@ -102,25 +97,21 @@ header h1 {
   font-size: x-large;
   padding-left: 1rem;
 }
-
 .header_content {
   position: relative;
   border-left: 0;
   padding-left: 0;
   width: 16rem;
 }
-
 .header_right {
   right: 0;
   width: 15rem;
 }
-
 .header_search {
   display: flex;
   justify-content: flex-end;
   width: 100%;
 }
-
 .search_container {
   box-sizing: border-box;
 }
@@ -134,23 +125,19 @@ header h1 {
 .search_container input[type="text"]:focus {
   outline: 0;
 }
-
 .header_link {
   font-size: 14px;
   margin-top: 10px;
   text-align: right;
 }
-
 .header_link li {
   padding: 0 3px;
   display: inline-block;
 }
-
 .header_link li a {
   text-decoration: none;
   color: #202d5d;
 }
-
 /* ---header----------------------------------------------------------------------- */
 /* ---nav_bar--- */
 .top_img_container {
@@ -170,20 +157,13 @@ header h1 {
 .top_img img {
   width: 1024px;
   height: 100%;
-
   display: block;
-  /*
-  background-image: url(/Applications/MAMP/htdocs/MySite/img/gallery6.jpg);
-  background-repeat: repeat;
-  background-size: cover; */
 }
-
 .nav_bar {
   height: 4rem;
   width: 100%;
   background-color: #fb6700;
 }
-
 .nav_bar ul {
   vertical-align: middle;
   display: table;
@@ -192,13 +172,11 @@ header h1 {
   width: 100%;
   font-size: smaller;
 }
-
 .nav_bar ul li {
   display: table-cell;
   text-align: center;
   vertical-align: middle;
 }
-
 .nav_part_in {
   display: flex;
   flex-direction: column;
@@ -209,15 +187,12 @@ header h1 {
   border-right: 0.5px solid white;
   margin: 0.5rem 0;
 }
-
 .nav_part_in.first {
   border-left: 0.5px solid white;
 }
-
 .nav_part_in p {
   font-weight: normal;
 }
-
 .nav_part_in span {
   margin-top: 3px;
   display: block;
@@ -227,8 +202,8 @@ header h1 {
 
 main {
   background-color: #eeeeee;
+  padding-top: 1rem;
 }
-
 /* 試合結果-------------------- */
 .container_left {
   width: 65%;
@@ -602,11 +577,14 @@ footer p {
 }
 /* footer_nss---------------------------------------------- */
 /* NEWSページ */
-.news_box {
+.news {
   width: 1024px;
-  background-color: white;
-  height: 1300px;
   margin: 0 auto;
+}
+.news_box {
+  width: 600px;
+  background-color: white;
+  height: 800px;
 }
 .news_title {
   display: flex;
@@ -630,11 +608,22 @@ footer p {
   display: inline-block;
   background-image: url(https://daichaaan.github.io/MySite/img/icon_news.png);
   background-size: contain;
-  width: 46px;
+  width: 40px;
   margin: 0 10px;
   height: 40px;
 }
-
+.news_sub {
+}
+.sub_title {
+}
+.sub_list {
+}
+.sub_list li {
+}
+.sub_list p {
+}
+.sub_list p span {
+}
 /* MEMBERページ--- */
 .main_box {
   height: 1500px;
