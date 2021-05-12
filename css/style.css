@@ -601,6 +601,40 @@ footer p {
   background-size: cover;
 }
 /* footer_nss---------------------------------------------- */
+/* NEWSページ */
+.news_box {
+  width: 1024px;
+  background-color: white;
+  height: 1300px;
+  margin: 0 auto;
+}
+.news_title {
+  display: flex;
+  border-bottom: solid 2px #fb6700;
+  padding: 25px 0px 25px 10px;
+  color: #1f2c5c;
+}
+.news_title h2 {
+  font-size: 2.5rem;
+  padding: 0px 3px;
+  font-family: "Arial Narrow Bold", arial, sans-serif;
+}
+.news_title p {
+  display: inline-block;
+  font-size: large;
+  margin-left: 0.5rem;
+  padding-top: 1rem;
+}
+.news_title::before {
+  content: "";
+  display: inline-block;
+  background-image: url(https://daichaaan.github.io/MySite/img/icon_news.png);
+  background-size: contain;
+  width: 46px;
+  margin: 0 10px;
+  height: 40px;
+}
+
 /* MEMBERページ--- */
 .main_box {
   height: 1500px;
