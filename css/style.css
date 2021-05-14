@@ -204,6 +204,11 @@ main {
   background-color: #eeeeee;
   padding-top: 1rem;
 }
+.container {
+  max-width: 1024px;
+  position: relative;
+  margin: 0 auto;
+}
 /* 試合結果-------------------- */
 .container_left {
   width: 65%;
@@ -211,18 +216,15 @@ main {
 .game_result {
   padding: 20px;
   background-color: white;
-  margin-bottom: 20px;
+  margin-bottom: 1rem;
 }
-
 .game_result dl {
   width: 100%;
   margin: 10px 0 30px;
 }
-
 .game_result dl dt {
   border-right: dotted 1px #1f2c5c;
 }
-
 .result {
   width: 50%;
 }
@@ -233,11 +235,9 @@ main {
   color: #202d5d;
   font-size: medium;
 }
-
 .sex {
   margin: 5px 0 30px;
 }
-
 .sex p {
   display: inline-block;
   width: 100%;
@@ -282,11 +282,9 @@ main {
   display: inline-block;
   border-bottom: 3px solid #5e72bf;
 }
-
 .tab_bar ul {
   width: 100%;
 }
-
 .tab_bar ul li {
   border-left: 1px solid #eeeeee;
   width: 20%;
@@ -298,7 +296,6 @@ main {
   display: block;
   border-radius: 11px 11px 0 0;
 }
-
 .tab_bar ul li:hover {
   background-color: #5e72bf;
   cursor: pointer;
@@ -312,34 +309,29 @@ main {
 /* top_contets --------*/
 .top_contets {
   background-color: white;
-  margin-bottom: 20px;
+  margin-bottom: 1rem;
   padding: 0 20px;
   font-size: 14px;
 }
-
 .top_contets ul li {
   line-height: 3;
   border-bottom: 1px solid#5e72bf;
 }
-
 .top_contets ul li span {
   background-color: #f10000;
   padding: 2px 6px;
   color: white;
   font-size: smaller;
 }
-
 .contents_more {
   display: flex;
   justify-content: flex-end;
   text-align: end;
   line-height: 4;
 }
-
 .contents_more a {
   font-size: smaller;
 }
-
 .contents_more span {
   padding-left: 10px;
 }
@@ -347,7 +339,7 @@ main {
 /* report--------------- */
 .report {
   background-color: white;
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
 }
 .report_container {
   width: 100%;
@@ -383,7 +375,6 @@ main {
 /* report----------------------------------------------------- */
 /* right link------------------------------------------------- */
 .container_right {
-  padding-top: 1rem;
   position: absolute;
   top: 0;
   right: 0;
@@ -409,30 +400,9 @@ main {
   margin-top: 5px;
 }
 /*  */
-/* sponcer -----------*/
-.sponcer {
-  background-color: #dddddd;
-}
-.sponcer_container {
-  padding: 5px 0 5px;
-}
-.sponcer_container ul {
-  text-align: center;
-}
-.sponcer_bar {
-  display: inline-block;
-  width: 60%;
-  margin-top: 3px;
-  align-items: center;
-}
-.sponcer_bar img {
-  width: 100%;
-}
-/* sponcer -----------------------------------------------*/
 /* ranking  */
 .league_ranking {
   background-color: white;
-  margin-top: 10px;
 }
 .leagur_title {
   background-color: #202d5d;
@@ -451,7 +421,6 @@ main {
 .league_ranking ul li {
   width: 50%;
   text-align: center;
-
   font-size: smaller;
 }
 .man {
@@ -490,13 +459,16 @@ main {
 /* ranking------------------------------------------------ */
 /* link_bar */
 .link_bar_wrap {
-  margin: 0 auto 1rem;
+  padding: 2rem 0 0;
+  width: 100%;
 }
 .link_bar_wrap ul {
   display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 .link_bar_wrap ul li {
-  margin-right: 10px;
+  padding-bottom: 0.5rem;
 }
 .link_bar img {
   width: 100%;
@@ -504,7 +476,7 @@ main {
 /* link_bar----------------------------------------------- */
 /* gallery */
 .gallery {
-  margin: 0 auto;
+  margin: 0 auto 1rem;
 }
 .gallery_container {
   width: 100%;
@@ -665,7 +637,7 @@ footer p {
   width: 100px;
   text-align: center;
 }
-.news_contents:hover{
+.news_contents:hover {
   cursor: pointer;
   opacity: 0.5;
 }
@@ -796,12 +768,7 @@ footer p {
 .member_name p {
   padding-bottom: 0.5rem;
 }
-.container {
-  max-width: 1024px;
-  padding: 1rem 0;
-  position: relative;
-  margin: 0 auto;
-}
+
 /* MATCHページ */
 .match_box {
   width: 1024px;
@@ -857,14 +824,19 @@ footer p {
   padding: 1rem 0 1rem 0;
 }
 .one {
+  height: 3rem;
   width: 15%;
   border-right: solid 1px #eeeeee;
 }
 .two {
+  display: flex;
+  flex-direction: column;
   width: 20%;
   border-right: solid 1px #eeeeee;
 }
 .three {
+  display: flex;
+  flex-direction: column;
   width: 40%;
   border-right: solid 1px #eeeeee;
 }
@@ -884,12 +856,21 @@ footer p {
   text-align: center;
   align-items: center;
   width: 100%;
-  height: 100px;
+  height: 6rem;
   background-color: white;
   padding: 0.5rem 0;
   border-bottom: dotted 1px #fb6700;
-  font-size: large;
+  font-size: 1rem;
+  line-height: 1.5em;
 }
+.zone_detail div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3.5rem;
+  text-align: center;
+}
+
 /* scheduleページ */
 .schedule_wrap {
   width: 1024px;
