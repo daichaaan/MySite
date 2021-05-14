@@ -580,15 +580,21 @@ footer p {
 .news {
   width: 1024px;
   margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
 }
 .news_box {
-  width: 600px;
+  width: 68%;
   background-color: white;
   height: 800px;
 }
+.news_title_list {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: solid 2px #fb6700;
+}
 .news_title {
   display: flex;
-  border-bottom: solid 2px #fb6700;
   padding: 25px 0px 25px 10px;
   color: #1f2c5c;
 }
@@ -613,16 +619,57 @@ footer p {
   height: 40px;
 }
 .news_sub {
+  width: 30%;
+}
+.news_years_list {
+  color: #1f2c5c;
+  display: flex;
+  text-align: center;
+  padding-top: 1rem;
+  font-size: 13px;
+  align-items: flex-end;
+  padding: 0 1rem 1.5rem 0;
+}
+.news_years_list span {
+  border: solid 1px #202d5d;
+  font-size: small;
+  padding: 3px 10px;
+}
+.news_years_list button {
+  font-size: 5px;
+  cursor: pointer;
+  color: white;
+  background-color: #1f2c5c;
+  padding: 2px 2px 0 2px;
 }
 .sub_title {
+  color: white;
+  background-color: #202d5d;
+  padding: 1rem;
+  margin-bottom: 2px;
+}
+.sub_title h3 {
+  font-weight: bold;
+  font-size: 1.5rem;
+  padding-bottom: 3px;
 }
 .sub_list {
 }
 .sub_list li {
+  color: white;
+  background-color: #202d5d;
+  padding: 1rem;
+  margin-bottom: 1px;
+  font-size: small;
+}
+.sub_list li:hover {
+  cursor: pointer;
+  background-color: #5e72bf;
 }
 .sub_list p {
 }
 .sub_list p span {
+  padding-right: 1rem;
 }
 /* MEMBERページ--- */
 .main_box {
