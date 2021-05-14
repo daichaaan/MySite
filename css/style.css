@@ -62,19 +62,17 @@ header {
   align-items: center;
 }
 .header_logo {
-  height: 52px;
+  height: 3rem;
   width: 160px;
 }
 .header_logo a {
   display: inline-block;
   height: 100%;
-  background-image: url("https://daichaaan.github.io/MySite/img/logo.jpeg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  overflow: hidden;
-  text-indent: 100%;
-  top: 0;
-  white-space: nowrap;
+  width: 100%;
+}
+.header_logo img {
+  width: 100%;
+  height: 100%;
 }
 .header_name {
   position: absolute;
@@ -145,19 +143,18 @@ header h1 {
   max-height: 485px;
   width: 100%;
   margin: 0 auto;
+  background-color: #dee3f8;
 }
 .top_img {
   display: block;
+  text-align: center;
   height: 100%;
-  background-color: #eeeeee;
-  background-image: url(https://daichaaan.github.io/MySite/img/top_img.jpeg);
-  background-repeat: space;
-  background-position: center;
+  width: 100%;
 }
 .top_img img {
   width: 1024px;
   height: 100%;
-  display: block;
+  margin: 0 auto;
 }
 .nav_bar {
   height: 4rem;
