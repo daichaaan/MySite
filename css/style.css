@@ -199,7 +199,6 @@ header h1 {
   font-weight: bolder;
 }
 /* ---main------------------------------------------------------------------------- */
-
 main {
   background-color: #eeeeee;
   padding-top: 1rem;
@@ -310,18 +309,31 @@ main {
 .top_contets {
   background-color: white;
   margin-bottom: 1rem;
-  padding: 0 20px;
+  padding: 0 1rem;
   font-size: 14px;
 }
-.top_contets ul li {
-  line-height: 3;
-  border-bottom: 1px solid#5e72bf;
+
+.top_content {
+  color: #202d5d;
+  width: 100%;
+  border-bottom: solid 1px #a0a0a0;
+  padding: 1rem 0;
 }
-.top_contets ul li span {
-  background-color: #f10000;
-  padding: 2px 6px;
+.top_content p {
+  display: inline-block;
+  margin-right: 1rem;
+}
+.top_content a {
   color: white;
-  font-size: smaller;
+  display: inline-block;
+  background-color: red;
+  margin-right: 1rem;
+  width: 100px;
+  text-align: center;
+}
+.top_content:hover {
+  cursor: pointer;
+  opacity: 0.5;
 }
 .contents_more {
   display: flex;
@@ -386,16 +398,12 @@ main {
   height: auto;
   padding-bottom: 16px;
 }
-
 .bannner {
-  width: 100%;
-  height: auto;
 }
-
-.bannner.one img {
+.bannner_one img {
   width: 100%;
 }
-.bannner.two img {
+.bannner_two img {
   width: 100%;
   margin-top: 5px;
 }
@@ -870,7 +878,6 @@ footer p {
   height: 3.5rem;
   text-align: center;
 }
-
 /* scheduleページ */
 .schedule_wrap {
   width: 1024px;
@@ -1195,7 +1202,6 @@ table {
   height: 40px;
 }
 .report_wrap {
-  background-color: wheat;
   width: 100%;
   height: 1300px;
   padding: 1rem;
@@ -1204,7 +1210,6 @@ table {
   width: 100%;
   height: 1236px;
   padding: 1rem;
-  background-color: #ffa54f;
   color: #202d5d;
   font-size: 2rem;
 }
@@ -1215,7 +1220,6 @@ table {
   flex-wrap: wrap;
 }
 .report_content {
-  background-color: khaki;
   display: inline-block;
   text-align: center;
   width: 30%;
@@ -1241,6 +1245,6 @@ table {
 }
 .report_content h3 {
   line-height: 1;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   line-height: 1.5;
 }
