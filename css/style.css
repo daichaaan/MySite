@@ -68,7 +68,7 @@ header {
 .header_logo a {
   display: inline-block;
   height: 100%;
-  background-image: url("https://daichaaan.github.io/MySite/img/parceiro-badminton.jp_.png");
+  background-image: url("https://daichaaan.github.io/MySite/img/logo.jpeg");
   background-size: contain;
   background-repeat: no-repeat;
   overflow: hidden;
@@ -150,7 +150,7 @@ header h1 {
   display: block;
   height: 100%;
   background-color: #eeeeee;
-  background-image: url(https://daichaaan.github.io/MySite/img/banner_20191122_02.jpg);
+  background-image: url(https://daichaaan.github.io/MySite/img/top_img.jpeg);
   background-repeat: space;
   background-position: center;
 }
@@ -435,7 +435,7 @@ main {
   line-height: 2rem;
   font-size: 1rem;
 }
-.man span{
+.man span {
   display: inline-block;
   margin-left: 1rem;
   font-size: 1.5rem;
