@@ -642,6 +642,33 @@ footer p {
   background-color: #1f2c5c;
   padding: 2px 2px 0 2px;
 }
+.news_main_list {
+  width: 100%;
+  height: 800px;
+  padding: 2rem 1rem 1rem;
+}
+.news_contents {
+  color: #202d5d;
+  width: 100%;
+  border-bottom: solid 1px #a0a0a0;
+  padding: 1rem 0;
+}
+.news_contents p {
+  display: inline-block;
+  margin-right: 1rem;
+}
+.news_contents a {
+  color: white;
+  display: inline-block;
+  background-color: red;
+  margin-right: 1rem;
+  width: 100px;
+  text-align: center;
+}
+.news_contents:hover{
+  cursor: pointer;
+  opacity: 0.5;
+}
 .sub_title {
   color: white;
   background-color: #202d5d;
