@@ -427,21 +427,26 @@ main {
   align-items: center;
 }
 .league_ranking ul li {
-  width: 50%;
+  width: 100%;
   text-align: center;
   font-size: smaller;
 }
 .man {
-  border-right: 1px solid #a0a0a0;
+  line-height: 2rem;
+  font-size: 1rem;
+}
+.man span{
+  display: inline-block;
+  margin-left: 1rem;
+  font-size: 1.5rem;
+  color: #d51a02;
+  padding-top: 0.5rem;
 }
 .league_ranking ul li a {
   display: block;
   padding: 0.5rem 0;
   cursor: pointer;
   color: #202d5d;
-}
-.league_ranking ul li:hover {
-  background-color: #eeeeee;
 }
 .ranking_table table {
   width: 100%;
@@ -1237,7 +1242,7 @@ table {
 }
 .report_content img {
   width: 95%;
-  height: 200px;
+  height: 200pjx;
 }
 .report_content p {
   margin: 0.5rem 0;
