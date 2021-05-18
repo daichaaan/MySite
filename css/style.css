@@ -53,7 +53,6 @@ header {
   height: 6rem;
 }
 .header_nav {
-  position: relative;
   max-width: 1024px;
   height: 100%;
   margin: 0 auto;
@@ -62,44 +61,36 @@ header {
   align-items: center;
 }
 .header_logo {
+  display: flex;
   height: 3rem;
-  width: 160px;
+  width: 35rem;
 }
 .header_logo a {
-  display: inline-block;
   height: 100%;
-  width: 100%;
+  width: 15rem;
 }
 .header_logo img {
   width: 100%;
   height: 100%;
 }
 .header_name {
-  position: absolute;
-  margin-left: 170px;
+  display: flex;
+  flex-direction: column;
   color: #202d5d;
-  width: 20rem;
   padding-left: 2rem;
 }
 header h2 {
   color: #202d5d;
-  display: inline-block;
   font-weight: bold;
-  line-height: initial;
+  font-size: 1rem;
+  line-height: 1.1em;
 }
 header h1 {
   color: #202d5d;
-  display: inline-block;
   font-weight: bold;
   line-height: initial;
-  font-size: x-large;
-  padding-left: 1rem;
-}
-.header_content {
-  position: relative;
-  border-left: 0;
-  padding-left: 0;
-  width: 16rem;
+  font-size: 1.5rem;
+  padding-left: 2rem;
 }
 .header_right {
   right: 0;
@@ -116,15 +107,19 @@ header h1 {
 .search_container input[type="text"] {
   background-color: white;
   border: 1px solid #c9c9c9;
-  height: 28px;
+  height: 33px;
   padding: 0 10px;
   width: 100%;
 }
 .search_container input[type="text"]:focus {
   outline: 0;
 }
+.btn_area button {
+  border: none;
+  padding: 6px 9px;
+}
 .header_link {
-  font-size: 14px;
+  font-size: small;
   margin-top: 10px;
   text-align: right;
 }
@@ -137,7 +132,7 @@ header h1 {
   color: #202d5d;
 }
 /* ---header----------------------------------------------------------------------- */
-/* ---nav_bar--- */
+/* top画像 */
 .top_img_container {
   height: 485px;
   max-height: 485px;
@@ -156,45 +151,48 @@ header h1 {
   height: 100%;
   margin: 0 auto;
 }
+/* ↑top画像 */
+/* ---nav_bar--- */
 .nav_bar {
   height: 4rem;
   width: 100%;
   background-color: #fb6700;
+  flex-direction: column;
 }
 .nav_bar ul {
-  vertical-align: middle;
-  display: table;
+  display: flex;
+  justify-content: space-around;
   margin: 0 auto;
   max-width: 1024px;
   width: 100%;
   font-size: smaller;
+  padding: 0.5rem 0;
 }
 .nav_bar ul li {
-  display: table-cell;
+  border-right: 2px solid #ffa54f;
+  width: 100%;
+  height: 3rem;
   text-align: center;
   vertical-align: middle;
 }
-.nav_part_in {
+.bar_content:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+.bar_content {
+  color: white;
   display: flex;
-  flex-direction: column;
+  text-align: center;
   justify-content: center;
   height: 3rem;
   width: 100%;
-  color: white;
-  border-right: 0.5px solid white;
-  margin: 0.5rem 0;
+  align-items: center;
+  flex-direction: column;
 }
-.nav_part_in.first {
-  border-left: 0.5px solid white;
+.bar_content p {
+  line-height: 1.5em;
 }
-.nav_part_in p {
-  font-weight: normal;
-}
-.nav_part_in span {
-  margin-top: 3px;
-  display: block;
-  font-weight: bolder;
-}
+/* ↑ navnar */
 /* ---main------------------------------------------------------------------------- */
 main {
   background-color: #eeeeee;
@@ -250,13 +248,11 @@ main {
   color: #202d5d;
   margin: 30px 0 20px;
 }
-
 .ranking span {
   color: #f10000;
   font-size: 40px;
   font-weight: bold;
 }
-
 .result_btn a {
   display: inline-block;
   padding: 10px 20px;
@@ -267,7 +263,6 @@ main {
 .result_btn a:hover {
   background-color: #5e72bf;
 }
-
 .result_btn span {
   padding-left: 10px;
 }
@@ -418,26 +413,24 @@ main {
 .leagur_title h2 {
   color: white;
 }
-.league_ranking ul {
+.man {
   width: 100%;
   display: flex;
   align-items: center;
+  line-height: 2rem;
+  font-size: 1rem;
 }
-.league_ranking ul li {
+.man li {
   width: 100%;
   text-align: center;
   font-size: smaller;
 }
-.man {
-  line-height: 2rem;
-  font-size: 1rem;
-}
-.man span {
+.man_result a {
   display: inline-block;
-  margin-left: 1rem;
+}
+.man_result span{
   font-size: 1.5rem;
   color: #d51a02;
-  padding-top: 0.5rem;
 }
 .league_ranking ul li a {
   display: block;
@@ -516,7 +509,6 @@ footer {
   width: 100%;
   display: flex;
   justify-content: space-around;
-  /* align-items: center; */
 }
 .footer_nav ul li {
   border-right: 0.1px solid #ffa54f;
@@ -524,7 +516,7 @@ footer {
   text-align: center;
 }
 .first {
-  border-left: 0.1px solid #ffa54f;
+  border-left: 2px solid #ffa54f;
 }
 
 .footer_nav ul li a {
