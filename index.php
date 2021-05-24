@@ -1,4 +1,4 @@
-<!-- header.php を読み込む-->
+<?php get_header(); ?>
 <!-- top画像 以下-->
 <div class="top_img_container">
     <a class="top_img" href="#">
@@ -6,8 +6,7 @@
     </a>
 </div>
 <!-- top画像　以上-->
-<!-- header_nav.php　読み込む-->
-
+<?php get_template_part('nav'); ?>
 <!-- main------------------------------------------------>
 <main>
     <div class="container">
@@ -53,61 +52,31 @@
                     <li><span>イベント</span></li>
                     <li><span>その他</span></li>
                 </ul>
-            </div> <!-- class="newsBar" -->
-            <!-- NEWSの最新記事を5つ表示 -->
+            </div>
             <div class="top_contets">
                 <?php
                 $args = [
-                'post_type' => 'news', // 取得する投稿タイプをpostにする
-                'posts_per_page' => 5, // 取得する数を5つにする
-                'order' => 'desc', // 降順で取得する
-                'orderby' => 'post_date', // どのパラメータで並べ替えるのかを指定する
+                'post_type' => 'post',      // 取得する投稿タイプをpostにする
+                'posts_per_page' => 5,
+                'order' => 'desc',
+                'orderby' => 'post_date',
                 ];
-                $news_query = new WP_Query($args); // WP_Queryオブジェクトを生成
+                $post_query = new WP_Query($args);  // WP_Queryオブジェクトを生成
                 ?>
-                <?php while ($news_query->have_posts()) : $news_query->the_post(); ?>
+                <?php while ($post_query->have_posts()) : $post_query->the_post(); ?>
                 <div class="top_content">
-                    <p><?php echo get_the_date(); ?></p>
-                    <a href="#"><span><?php the_sorce(); ?></span></a>
+                    <p><?php the_time('Y年m月d日'); ?></p>
+                    <a href="#"><span><?php $tags = get_the_tags(); ?></span></a>
                     <p><?php the_title(); ?></p>
+                    <!-- タイトルを表示 -->
                 </div>
                 <?php endwhile; ?>
-            </div>
-            <div class="contents_more">
-                <a href="https://daichaaan.github.io/MySite/news">もっと見る<span>></span></a>
-            </div>
 
-            <div class="top_contets">
-                <!-- wordpress ? 最新情報の記事-->
-                <div class="top_content">
-                    <p>2021.05.14</p>
-                    <a href="#"><span>イベント</span></a>
-                    <p>社会人リーグ結果報告</p>
-                </div>
-                <div class="top_content">
-                    <p>2021.05.10</p>
-                    <a href="#"><span>クラブ</span></a>
-                    <p>練習日程</p>
-                </div>
-                <div class="top_content">
-                    <p>2021.05.08</p>
-                    <a href="#"><span>その他</span></a>
-                    <p>試合申し込みについて</p>
-                </div>
-                <div class="top_content">
-                    <p>2021.04.25</p>
-                    <a href="#"><span>イベント</span></a>
-                    <p>GWのイベントについて</p>
-                </div>
-                <div class="top_content">
-                    <p>2021.04.01</p>
-                    <a href="#"><span>イベント</span></a>
-                    <p>2021年度の予定</p>
-                </div>
                 <div class="contents_more">
                     <a href="https://daichaaan.github.io/MySite/news">もっと見る<span>></span></a>
                 </div>
-            </div> <!-- class="news"-->
+            </div>
+            <!-- class="news" -->
             <!-- 活動報告 記事内はwordpress? -->
             <div class="report">
                 <div class="title">
@@ -224,10 +193,6 @@
                     <li><a class="link_bar" href="#"><img
                                 src="<?php echo get_template_directory_uri(); ?>/img/top_banner_movie.jpg"
                                 alt="AC長野パルセイロ・バドミントンMovieギャラリー"></a></li>
-                    <li><a class="link_bar" href="#"><img
-                                src="<?php echo get_template_directory_uri(); ?>/top_banner_soccer.jpg"
-                                alt="AC長野パルセイロ"></a>
-                    </li>
                 </ul>
             </div>
         </div>
@@ -250,6 +215,7 @@
     </div>
 </main>
 <!-- footer.php 読み込む -->
+<?php get_footer(); ?>
 </body>
 
 </html>

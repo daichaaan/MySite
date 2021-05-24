@@ -390,8 +390,6 @@ main {
   height: auto;
   padding-bottom: 16px;
 }
-.bannner {
-}
 .bannner_one img {
   width: 100%;
 }
@@ -485,8 +483,6 @@ main {
   width: 100%;
   height: 200px;
   background-color: teal;
-}
-.gallery_img {
 }
 /* gallery------------------------------------------------- */
 /* footer */
@@ -654,8 +650,6 @@ footer p {
   font-size: 1.5rem;
   padding-bottom: 3px;
 }
-.sub_list {
-}
 .sub_list li {
   color: white;
   background-color: #202d5d;
@@ -666,8 +660,6 @@ footer p {
 .sub_list li:hover {
   cursor: pointer;
   background-color: #5e72bf;
-}
-.sub_list p {
 }
 .sub_list p span {
   padding-right: 1rem;
@@ -1221,8 +1213,6 @@ table {
   padding: 1rem 0.5rem;
   margin-bottom: 1rem;
   cursor: pointer;
-}
-.report_content:hover {
 }
 .report_content a {
   text-align: center;
