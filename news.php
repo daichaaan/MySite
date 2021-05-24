@@ -1,4 +1,8 @@
-<?php get_header(); ?>
+<?php
+/*
+Template Name: NEWS
+*/
+get_header(); ?>
 <?php get_template_part('nav'); ?>
 <main>
     <div class="main_box">

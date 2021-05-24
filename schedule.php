@@ -1,4 +1,8 @@
-<?php get_header(); ?>
+<?php
+/*
+Template Name: SCHEDULE
+*/
+get_header(); ?>
 <?php get_template_part('nav'); ?>
 
 <!-- main -->

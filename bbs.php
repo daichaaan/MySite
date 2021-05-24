@@ -1,4 +1,9 @@
-<?php get_header(); ?>
+<?php
+/*
+Template Name: BBS
+*/
+get_header();
+?>
 <?php get_template_part('nav'); ?>
 
 <!-- main -->
