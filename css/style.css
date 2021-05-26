@@ -1,3 +1,4 @@
+
 * {
   scroll-behavior: smooth;
   font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ",
@@ -428,7 +429,7 @@ main {
 .man_result a {
   display: inline-block;
 }
-.man_result span{
+.man_result span {
   font-size: 1.5rem;
   color: #d51a02;
 }
